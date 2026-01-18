@@ -4,7 +4,7 @@ func getPremiumPlanBadge() throws -> Data {
     let badge = YourPremiumBadge.with {
         $0.name = "SAMJ"
         $0.version = 2
-        $0.colorCode = "#FFD2D7"
+        $0.colorCode = "#f54242"
     }
     
     return try badge.serializedData()
@@ -30,7 +30,7 @@ func getPlanOverviewData() throws -> Data {
             $0.planVariant = 2
             $0.planName = "SamJSpotify"
             $0.planCategory = "SAMJ"
-            $0.colorCode = "#FFD2D7"
+            $0.colorCode = "#f54242"
             $0.features = [
                 SpotifyPlan.Feature.with {
                     $0.color = "#1ED760"
